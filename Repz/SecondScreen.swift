@@ -14,6 +14,8 @@ class SecondScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     let manager = IconManager.sharedManager()
     let kBaseTag = 1001
+    // Below Half
+    let CY:CGFloat = 650 //+ 64 //683
     
     @IBOutlet var cover2: UIButton!
     @IBOutlet var cover3: UIButton!
@@ -62,36 +64,64 @@ class SecondScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet var nameField: UITextField!
     @IBOutlet weak var layoutName: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         iconType = IconType.Cross
         nameField.text = iconName
         let screenSize = UIScreen.mainScreen().bounds.size
         //it's array1 to store postion of all icons
-        iconPosArr = [CGPointMake(screenSize.width * 0.445312, self.view.frame.size.height * 0.072266),//0
-                      CGPointMake(screenSize.width * 0.628906, self.view.frame.size.height * 0.472070),//1
-                      CGPointMake(screenSize.width * 0.476562, self.view.frame.size.height * 0.451563),//2
-                      CGPointMake(screenSize.width * 0.332899, self.view.frame.size.height * 0.630273),//3
-                      CGPointMake(screenSize.width * 0.169010, self.view.frame.size.height * 0.322656),//4
-                      CGPointMake(screenSize.width * 0.196701, self.view.frame.size.height * 0.486719),//5
-                      CGPointMake(screenSize.width * 0.224219, self.view.frame.size.height * 0.444727),//6
-                      CGPointMake(screenSize.width * 0.324653, self.view.frame.size.height * 0.487695),//7
-                      CGPointMake(screenSize.width * 0.443056, self.view.frame.size.height * 0.364583),//8
-                      CGPointMake(screenSize.width * 0.031250, self.view.frame.size.height * 0.450195),//9
-                      CGPointMake(screenSize.width * 20.098958, self.view.frame.size.height * 20.885742),
-                      CGPointMake(screenSize.width * 0.125347, self.view.frame.size.height * 0.575195),//10
-                      CGPointMake(screenSize.width * 0.597656, self.view.frame.size.height * 0.358398),//11
-                      CGPointMake(screenSize.width * 0.446615, self.view.frame.size.height * 0.488672),//12
-                      CGPointMake(screenSize.width * 0.352865, self.view.frame.size.height * 0.446680),//13
-                      CGPointMake(screenSize.width * 0.461892, self.view.frame.size.height * 0.677148),//14
-                      CGPointMake(screenSize.width * 0.292795, self.view.frame.size.height * 0.446680),//15
-                      CGPointMake(screenSize.width * 0.261719, self.view.frame.size.height * 0.488672),//16
-                      CGPointMake(screenSize.width * 0.190451, self.view.frame.size.height * 0.082422),//17
-                      CGPointMake(screenSize.width * 0.508767, self.view.frame.size.height * 0.489583),//18
-                      CGPointMake(screenSize.width * 0.000434, self.view.frame.size.height * 0.365625),//19
-                      CGPointMake(screenSize.width * 0.385417, self.view.frame.size.height * 0.488932),//20
-                      CGPointMake(screenSize.width * 0.321788, self.view.frame.size.height * 0.372721),//21
-        ]
+//        iconPosArr = [CGPointMake(screenSize.width * 0.445312, self.view.frame.size.height * 0.072266),//0
+//                      CGPointMake(screenSize.width * 0.628906, self.view.frame.size.height * 0.472070),//1
+//                      CGPointMake(screenSize.width * 0.476562, self.view.frame.size.height * 0.451563),//2
+//                      CGPointMake(screenSize.width * 0.332899, self.view.frame.size.height * 0.630273),//3
+//                      CGPointMake(screenSize.width * 0.169010, self.view.frame.size.height * 0.322656),//4
+//                      CGPointMake(screenSize.width * 0.196701, self.view.frame.size.height * 0.486719),//5
+//                      CGPointMake(screenSize.width * 0.224219, self.view.frame.size.height * 0.444727),//6
+//                      CGPointMake(screenSize.width * 0.324653, self.view.frame.size.height * 0.487695),//7
+//                      CGPointMake(screenSize.width * 0.443056, self.view.frame.size.height * 0.364583),//8
+//                      CGPointMake(screenSize.width * 0.031250, self.view.frame.size.height * 0.450195),//9
+//                      CGPointMake(screenSize.width * 20.098958, self.view.frame.size.height * 20.885742),
+//                      CGPointMake(screenSize.width * 0.125347, self.view.frame.size.height * 0.575195),//10
+//                      CGPointMake(screenSize.width * 0.597656, self.view.frame.size.height * 0.358398),//11
+//                      CGPointMake(screenSize.width * 0.446615, self.view.frame.size.height * 0.488672),//12
+//                      CGPointMake(screenSize.width * 0.352865, self.view.frame.size.height * 0.446680),//13
+//                      CGPointMake(screenSize.width * 0.461892, self.view.frame.size.height * 0.677148),//14
+//                      CGPointMake(screenSize.width * 0.292795, self.view.frame.size.height * 0.446680),//15
+//                      CGPointMake(screenSize.width * 0.261719, self.view.frame.size.height * 0.488672),//16
+//                      CGPointMake(screenSize.width * 0.190451, self.view.frame.size.height * 0.082422),//17
+//                      CGPointMake(screenSize.width * 0.508767, self.view.frame.size.height * 0.489583),//18
+//                      CGPointMake(screenSize.width * 0.000434, self.view.frame.size.height * 0.365625),//19
+//                      CGPointMake(screenSize.width * 0.385417, self.view.frame.size.height * 0.488932),//20
+//                      CGPointMake(screenSize.width * 0.321788, self.view.frame.size.height * 0.372721),//21
+//        ]
+        
+        //For Set Default Value Generating Cover3 Mode
+        iconPosArr = [CGPointMake(278,590),//0
+            CGPointMake(344,590),//1
+            CGPointMake(410,590),//2
+            CGPointMake(495,590),//3
+            CGPointMake(48,506),//4
+            CGPointMake(202,535),//5
+            CGPointMake(278,535),//6
+            CGPointMake(434,535),//7
+            CGPointMake(530,543),//8
+            CGPointMake(648,553),//9
+            //CGPointMake(48,506),
+            CGPointMake(332,198),//10
+            CGPointMake(30,CY+53),//11
+            CGPointMake(140,CY+140),//12
+            CGPointMake(266,CY+25),//13
+            CGPointMake(320,CY+25),//14
+            CGPointMake(376,CY+25),//15
+            CGPointMake(424,CY+25),//16
+            CGPointMake(475,CY+25),//17
+            CGPointMake(530,CY+140),//18
+            CGPointMake(644,CY+25),//19
+            CGPointMake(278,CY+166),//20
+            CGPointMake(344,CY+153),//21
+         ]
+            
         iconRandomCircleArr_1 = [
             CGPointMake(screenSize.width * 0.628906, self.view.frame.size.height * 0.472070),
             CGPointMake(screenSize.width * 0.332899, self.view.frame.size.height * 0.630273),
@@ -181,9 +211,6 @@ class SecondScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         ]
         
         // --- DEFENCE ---
-        // Below Half
-        let CY:CGFloat = 650 //+ 64 //683
-        
         iconPosDeffencePass = [
             CGPointMake(37, CY+20),
             CGPointMake(113, CY+35),
@@ -462,7 +489,10 @@ class SecondScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
 //                 print(String(format: "CGPointMake(screenSize.width * %f, self.view.frame.size.height * %f),", CGPointFromString(iconPosArray.objectAtIndex(index) as! String).x/self.view.frame.size.width, CGPointFromString(iconPosArray.objectAtIndex(index) as! String).y/self.view.frame.size.height))
                 }
                 iconPosArray = NSUserDefaults.standardUserDefaults().objectForKey(String(format: "KEY_%d", layoutIndex)) as! NSMutableArray
-                initIconWithType(index % 2 == 0 ? IconType.Cross : IconType.Circle /*iconType*/, position: CGPointFromString(iconPosArray.objectAtIndex(index) as! String))
+                
+                //Remove this comment after made Cover 3 layout
+                //initIconWithType(index % 2 == 0 ? IconType.Cross : IconType.Circle /*iconType*/, position: CGPointFromString(iconPosArray.objectAtIndex(index) as! String))
+                initIconWithType(index <= 10 ? IconType.Cross : IconType.Circle /*iconType*/, position: CGPointFromString(iconPosArray.objectAtIndex(index) as! String))
             }
         layoutIcons()
     }

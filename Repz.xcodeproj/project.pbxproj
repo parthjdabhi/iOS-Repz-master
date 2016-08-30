@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E5281CB1D759A0B00097142 /* MyNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5281CA1D759A0B00097142 /* MyNavigationBar.swift */; };
-		5E5281CF1D75C20F00097142 /* Cover3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E5281CE1D75C20F00097142 /* Cover3.plist */; };
+		5E5281D51D75EBE300097142 /* Cover3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E5281D41D75EBE300097142 /* Cover3.plist */; };
 		8013BA2C1D60F20B0073EFC1 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013BA2B1D60F20B0073EFC1 /* SecondScreen.swift */; };
 		8013BA2E1D60F2170073EFC1 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013BA2D1D60F2170073EFC1 /* ThirdScreen.swift */; };
 		8013BA351D60F6400073EFC1 /* IconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013BA341D60F6400073EFC1 /* IconManager.swift */; };
@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		5E5281CA1D759A0B00097142 /* MyNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationBar.swift; sourceTree = "<group>"; };
-		5E5281CE1D75C20F00097142 /* Cover3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cover3.plist; sourceTree = "<group>"; };
+		5E5281D41D75EBE300097142 /* Cover3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cover3.plist; sourceTree = "<group>"; };
 		8013BA2B1D60F20B0073EFC1 /* SecondScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		8013BA2D1D60F2170073EFC1 /* ThirdScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 		8013BA341D60F6400073EFC1 /* IconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconManager.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				8013BA341D60F6400073EFC1 /* IconManager.swift */,
 				959D13611D6B468800401BEC /* Constant.swift */,
 				E19BA3A31D6DAE0F00E8768E /* MyData.plist */,
-				5E5281CE1D75C20F00097142 /* Cover3.plist */,
+				5E5281D41D75EBE300097142 /* Cover3.plist */,
 				E19BA3A41D6DAE0F00E8768E /* PlistManager.swift */,
 			);
 			name = Utility;
@@ -286,8 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5281D51D75EBE300097142 /* Cover3.plist in Resources */,
 				DA012F591D5FC1F000ADBF02 /* LaunchScreen.storyboard in Resources */,
-				5E5281CF1D75C20F00097142 /* Cover3.plist in Resources */,
 				DA012F561D5FC1F000ADBF02 /* Assets.xcassets in Resources */,
 				E19BA3A51D6DAE0F00E8768E /* MyData.plist in Resources */,
 				DA012F511D5FC1F000ADBF02 /* Main.storyboard in Resources */,

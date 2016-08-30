@@ -700,6 +700,92 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.54901960780000003" green="0.77647058820000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czY-ku-hyg" userLabel="Cover3 Ofence">
+                                <rect key="frame" x="0.0" y="64" width="709" height="650"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZuA-s5-rVt">
+                                        <rect key="frame" x="0.0" y="644" width="709" height="14"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="XOA-9W-hpG">
+                                        <rect key="frame" x="278" y="590" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="lMm-Vg-8tm">
+                                        <rect key="frame" x="410" y="590" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-1O-Rzn">
+                                        <rect key="frame" x="648" y="535" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="AGP-eN-cu1">
+                                        <rect key="frame" x="344" y="590" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="dsd-ZU-Jca">
+                                        <rect key="frame" x="202" y="535" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="03z-17-fWH">
+                                        <rect key="frame" x="278" y="535" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="t3u-8w-L7K">
+                                        <rect key="frame" x="434" y="535" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="wOQ-79-Bgw">
+                                        <rect key="frame" x="495" y="590" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="2Wl-43-9hP">
+                                        <rect key="frame" x="332" y="148" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="Lsk-3S-n2q">
+                                        <rect key="frame" x="530" y="535" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="KLc-DE-1H0">
+                                        <rect key="frame" x="48" y="506" width="20" height="20"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-q3-OEx" userLabel="Cover3 Defence">
+                                <rect key="frame" x="0.0" y="721" width="709" height="650"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nba-KD-9BR">
+                                        <rect key="frame" x="0.0" y="-7" width="709" height="14"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="vQw-yz-4NN">
+                                        <rect key="frame" x="344" y="153" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="1gY-wx-17e">
+                                        <rect key="frame" x="424" y="25" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="iaE-tQ-c7R">
+                                        <rect key="frame" x="475" y="25" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-Ep-U8G">
+                                        <rect key="frame" x="376" y="25" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="ja2-JB-yGZ">
+                                        <rect key="frame" x="30" y="58" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="WVf-h2-bgA">
+                                        <rect key="frame" x="644" y="25" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="gDA-8v-N83">
+                                        <rect key="frame" x="278" y="166" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="M1g-dQ-EKh">
+                                        <rect key="frame" x="320" y="25" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="JZO-f9-jBh">
+                                        <rect key="frame" x="266" y="25" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="N1R-ja-A3D">
+                                        <rect key="frame" x="549" y="140" width="20" height="20"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="hao-jc-zZk">
+                                        <rect key="frame" x="139" y="140" width="20" height="20"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -794,6 +880,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Circle" width="45" height="43"/>
         <image name="X" width="45" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>

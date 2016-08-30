@@ -50,6 +50,7 @@ class IconManager {
             
 //            let dict = NSMutableDictionary()
 //            dict.setObject(icon.name, forKey: "name")
+//            //dict.setObject("Cover3", forKey: "name")
 //            dict.setValue(icon.fileName, forKey: "fileName")
 //            dict.setValue(icon.startPos.x, forKey: "startPosX")
 //            dict.setValue(icon.startPos.y, forKey: "startPosY")
@@ -67,14 +68,14 @@ class IconManager {
                 let data = NSKeyedArchiver.archivedDataWithRootObject(dataArray as AnyObject)
                 iconObject.setValue(data, forKey: "path")
                 
-//                dict.setValue(data, forKey: "path")
+                //dict.setValue(data, forKey: "path")
             }
 //            print("iconObject=> ", iconObject)
 //            print("Dict=> ", dict)
-            
-//            PlistManager.sharedInstance.addNewItemWithKey(String(format: "Key_%d", index), value: dict)
-//            print(PlistManager.sharedInstance.getValueForKey(String(format: "Key_%d", index)))
-//            index += 1
+//            
+//            PlistManager.sharedInCover3.addNewItemWithKey(String(format: "Key_%d", index), value: dict)
+//            print(PlistManager.sharedInCover3.getValueForKey(String(format: "Key_%d", index)))
+            index += 1
             do {
                 try managedContext.save()
             } catch let error as NSError  {

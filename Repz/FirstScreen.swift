@@ -91,7 +91,7 @@ class FirstScreen: UIViewController, UITableViewDataSource, UITableViewDelegate 
                     nameArray.append(name)
                 }
             }
-            print("namearray", nameArray)
+            //print("namearray", nameArray)
             savedList.reloadData()
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
