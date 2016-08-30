@@ -17,14 +17,6 @@ class SecondScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     // Below Half
     let CY:CGFloat = 650 //+ 64 //683
     
-    @IBOutlet var cover2: UIButton!
-    @IBOutlet var cover3: UIButton!
-    
-    @IBOutlet var btnDefencePass: UIButton!
-    @IBOutlet var btnDefenceRun: UIButton!
-    @IBOutlet var btnOffence3x4: UIButton!
-    @IBOutlet var btnOffence4x3: UIButton!
-    
     var startPos:CGPoint = CGPointZero
     var endPos:CGPoint = CGPointZero
     
@@ -64,6 +56,16 @@ class SecondScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet var nameField: UITextField!
     @IBOutlet weak var layoutName: UITextField!
     
+    @IBOutlet var cover2: UIButton!
+    @IBOutlet var cover3: UIButton!
+    
+    @IBOutlet var btnDefencePass: UIButton!
+    @IBOutlet var btnDefenceRun: UIButton!
+    @IBOutlet var btnOffence3x4: UIButton!
+    @IBOutlet var btnOffence4x3: UIButton!
+    
+    @IBOutlet var btnCornerback: UIButton!
+    @IBOutlet var btnBlitzer: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -368,7 +370,6 @@ class SecondScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     func setSelectedIconFromTouch(touch:UITouch?) {
         
         if touch == nil {
-            
             selectedIcon = nil
             return
         }
@@ -607,14 +608,39 @@ class SecondScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             icon.path.append(CGPointMake(icon.startPos.x, icon.startPos.y + CGFloat(index*3)))
         }
     }
+    @IBAction func actionCornerback(sender: AnyObject)
+    {
+        //var RMXimgView:UIImageView?
+        var rightMostX:Icon?
+        
+        var tag = 0
+        var countCross = 0
+        for icon in manager.iconArrary {
+            let imgView = self.view.viewWithTag(kBaseTag + tag) as! UIImageView
+            if icon.type == IconType.Cross {
+                if let ic = rightMostX {
+                    if ic.startPos.x < icon.startPos.x {
+                        rightMostX = icon
+                        //RMXimgView = imgView
+                    }
+                } else {
+                    rightMostX = icon
+                    //RMXimgView = imgView
+                }
+                countCross += 1
+            }
+            tag += 1
+        }
+        
+        //RMXimgView?.backgroundColor = UIColor.redColor()
+        if let icon = rightMostX {
+            for index in 0...50 {
+                icon.path.append(CGPointMake(icon.startPos.x, icon.startPos.y + CGFloat(index*3)))
+            }
+        }
+    }
     
-    /*
- var iconPosOffencePass:[CGPoint]!
- var iconPosOffenceRun:[CGPoint]!
- 
- var iconPosDeffence3x4:[CGPoint]!
- var iconPosDeffence4x3:[CGPoint]!
- */
+    
     @IBAction func actionSetIconPos(sender: UIButton)
     {
         switch sender {
